@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--QUANGTRAN,CTI110-0008-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #eee;
+            padding: 1rem;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 0 1rem;
+            padding: 0.5rem;
+        }
+        
+        main {
+            padding: 2rem;
+        }
+           #slideshow {
+      max-width: 1700px;
+      margin: 0 auto;
+      position: relative;
+    }
+    #slideshow img {
+      max-width: 100%;
+      height: auto;
+    }
+    #slideshow .prev, #slideshow .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 2rem;
+      color: #fff;
+      background-color: rgba(0,0,0,0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    #slideshow .prev:hover, #slideshow .next:hover {
+      background-color: rgba(0,0,0,0.7);
+    }
+    #slideshow .prev {
+      left: 0;
+    }
+    #slideshow .next {
+      right: 0;
+    }
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        
+        img {
+            display: block;
+            margin: 2rem auto;
+            max-width: 100%;
+        }
+        
+        ul {
+            list-style: none;
+            margin: 2rem 0;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 1rem;
+        }
+        
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 14px;
+			margin-top: 50px;
+		}
+    </style>
+</head>
+<body>
+	
+    <header>
+      <h1>Design Company&nbsp;</h1>
+		
+    </header>
+    <nav>
+        <a href="Home.html">Home</a> <a href="About.html">About</a> <a href="Services.html">Services</a> <a href="Contact Us.html">Contact Us</a></nav>
+    <main>
+ <div style="background-image: url('CTI110/chapter_1/assets/background-image.jpg'); background-size: cover; padding: 50px;">
+    <h1>Welcome to Our Website</h1>
+    <p>We are happy you are here. We are a group of enthusiastic designers who focus on building stunning and useful websites that support online company success. Our mission is to offer our clients professional web design services that are catered to their unique requirements and financial constraints.</p>
+    <button style="background-color: #333; color: #fff; border: none; padding: 10px 20px; border-radius: 5px;">Get Started</button>
+ 
+ </div>
+	  <div id="slideshow">
+    <div class="slide">
+      <img src="bigstock-Web-Design-Web-Development-Res-95465387.jpg" width="1280" height="720" alt="Slide 1">
+	</div>
+    <div class="slide">
+      <img src="web-design-upsells.jpg" width="1280" height="720" alt="Slide 2">
+	    </div>
+    <div class="slide">
+    <img src="Web-Design-Sydney-Types-of-Web-Development-Services.jpg" width="1280" height="720" alt="Slide 3"> 
+		  </div>
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slide");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "grid";
+    }
+  </script>
+ <div style="background-color: #f2f2f2; padding: 20px; border-radius: 10px; text-align: center;">
+    <h3 style="font-size: 28px; font-weight: bold;">Web Design Packages</h3>
+    <p style="font-size: 18px;">Select one of our cost effective web design packages to launch your website.</p>
+<div style="display: flex; justify-content: space-around; margin-top: 30px;">
+        <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+            <h4 style="font-size: 22px; font-weight: bold;">Basic</h4>
+            <p style="font-size: 22px;">$500</p>
+            <ul>
+                <li>3-page website</li>
+                <li>Custom design</li>
+                <li>Responsive layout</li>
+                <li>Basic SEO</li>
+            </ul>
+            <a href="#" style="display: block; margin-top: 20px; background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Get Started</a>
+        </div>
+        <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+            <h4 style="font-size: 22px; font-weight: bold;">Premium</h4>
+            <p style="font-size: 18px;">$1,000</p>
+            <ul>
+                <li>5-page website</li>
+                <li>Custom design</li>
+                <li>Responsive layout</li>
+                <li>Advanced SEO</li>
+                <li>Basic content creation</li>
+            </ul>
+            <a href="#" style="display: block; margin-top: 20px; background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Get Started</a>
+        </div>
+        <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+            <h4 style="font-size: 22px; font-weight: bold;">Ultimate</h4>
+            <p style="font-size: 18px;">$2,000+</p>
+            <ul>
+                <li>Custom number of pages</li>
+                <li>Custom design</li>
+                <li>Responsive layout</li>
+                <li>Advanced SEO</li>
+                <li>Custom content creation</li>
+                <li>E-commerce functionality</li>
+            </ul>
+            <a href="#" style="display: block; margin-top: 20px; background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Get Started</a>
+        </div>
+    </div>
+ </div>
+	</main>
+	<footer>
+			<p>&copy; 2023 Design Website. All rights reserved.</p>
+</footer>
+</body>
+<!--This file is my own work and i typed everything manually,QUANGTRAN-->
+           
